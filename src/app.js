@@ -11,10 +11,10 @@
 			secure: true
 		},
 		identity: {
-			username: 'ligoligo12',
-			password: 'oauth:2adeuj6p5ui8ujtxmqwkf55sk5janf'
+			username: 'syo117',
+			password: 'oauth:ccakugx5o3krbn0f7i2bgj7ymk4laz'
 		},
-		channels: [ 'ligoligo12' ]
+		channels: [ 'syo117' ]
 	}
 	
 	const client = new tmi.Client(option);
@@ -23,17 +23,22 @@
 	
 	let p1Click = false;
 	let p2Click = false;
+	let p3Click = false;
 	client.on('message', (channel, tags, message, self) => {
 		// Ignore echoed messages.
 		if(self) return;
 		
 		if(p1Click === true)
 		{
-			client.say(channel, `@${tags.username}, p1+: Fighting`);
+			client.say(channel, `@${tags.username}, OK`);
 		}
 		else if (p2Click === true)
 		{
-			client.say(channel, `@${tags.username}, p2-: Loser`);
+			client.say(channel, `@${tags.username}, Good`);
+		}
+		else if (p3Click === true)
+		{
+			client.say(channel, `@${tags.username}, Well`);
 		}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
@@ -51,7 +56,7 @@
             alert("Please type your Twitch name");
         }
         else{
-            client.say(`#ligoligo12`, `@${name}, p1+: Fighting`);
+            client.say(`#syo117`, `@${name}, Ok`);
         }
         
     }
@@ -64,7 +69,19 @@
 
 		}
 		else{
-			client.say(`#ligoligo12`, `@${name}, p2-: Loser`);
+			client.say(`#syo117`, `@${name}, Good`);
+		}
+	}
+	function sentMessageBotP3(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your Twitch name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, Well`);
 		}
 
 
