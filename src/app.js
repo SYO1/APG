@@ -38,7 +38,7 @@
 		}
 		else if (p3Click === true)
 		{
-			client.say(channel, `@${tags.username}, Well`);
+			client.say(channel, `@${tags.username}, Cool`);
 		}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
@@ -81,7 +81,7 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Well`);
+			client.say(`#syo117`, `@${name}, Cool`);
 		}
 
 
