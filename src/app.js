@@ -53,7 +53,7 @@
         var name = document.getElementById('input-text-twitch').value;
         if(name === "")
         {
-            alert("Please type your Twitch name");
+            alert("Please type your full name");
         }
         else{
             client.say(`#syo117`, `@${name}, Ok`);
@@ -65,7 +65,7 @@
 
 		if(name === "")
         {
-			alert("Please type your Twitch name");
+			alert("Please type your full name");
 
 		}
 		else{
@@ -77,7 +77,7 @@
 	
 		if(name === "")
 		{
-			alert("Please type your Twitch name");
+			alert("Please type your full name");
 	
 		}
 		else{
