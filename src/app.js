@@ -24,21 +24,37 @@
 	let p1Click = false;
 	let p2Click = false;
 	let p3Click = false;
+	let p4Click = false;
+	let p5Click = false;
+	let p6Click = false;
+
 	client.on('message', (channel, tags, message, self) => {
 		// Ignore echoed messages.
 		if(self) return;
 		
 		if(p1Click === true)
 		{
-			client.say(channel, `@${tags.username}, OK`);
+			client.say(channel, `@${tags.username}, Help`);
 		}
 		else if (p2Click === true)
 		{
-			client.say(channel, `@${tags.username}, Good`);
+			client.say(channel, `@${tags.username}, Confuse`);
 		}
 		else if (p3Click === true)
 		{
-			client.say(channel, `@${tags.username}, Cool`);
+			client.say(channel, `@${tags.username}, Tease`);
+		}
+		else if (p4Click === true)
+		{
+			client.say(channel, `@${tags.username}, Co-help`);
+		}
+		else if (p5Click === true)
+		{
+			client.say(channel, `@${tags.username}, Co-tease`);
+		}
+		else if (p6Click === true)
+		{
+			client.say(channel, `@${tags.username}, Co-confuse`);
 		}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
@@ -56,7 +72,7 @@
             alert("Please type your full name");
         }
         else{
-            client.say(`#syo117`, `@${name}, Ok`);
+            client.say(`#syo117`, `@${name}, Help`);
         }
         
     }
@@ -69,7 +85,7 @@
 
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Good`);
+			client.say(`#syo117`, `@${name}, Confuse`);
 		}
 	}
 	function sentMessageBotP3(){
@@ -81,11 +97,49 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Cool`);
+			client.say(`#syo117`, `@${name}, Tease`);
 		}
-
-
     }
+
+	function sentMessageBotP4(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, Co-help`);
+		}
+	}
+
+	function sentMessageBotP5(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, Co-tease`);
+		}
+	}
+
+	function sentMessageBotP6(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, Co-confuse`);
+		}
+	}
+
 //}
 
 
