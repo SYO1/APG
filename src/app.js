@@ -46,15 +46,15 @@
 		}
 		else if (p4Click === true)
 		{
-			client.say(channel, `@${tags.username}, Co-help`);
+			client.say(channel, `@${tags.username}, Co-h`);
 		}
 		else if (p5Click === true)
 		{
-			client.say(channel, `@${tags.username}, Co-tease`);
+			client.say(channel, `@${tags.username}, Co-t`);
 		}
 		else if (p6Click === true)
 		{
-			client.say(channel, `@${tags.username}, Co-confuse`);
+			client.say(channel, `@${tags.username}, Co-c`);
 		}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
@@ -110,7 +110,7 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Co-help`);
+			client.say(`#syo117`, `@${name}, Co-h`);
 		}
 	}
 
@@ -123,7 +123,7 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Co-tease`);
+			client.say(`#syo117`, `@${name}, Co-t`);
 		}
 	}
 
@@ -136,7 +136,7 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Co-confuse`);
+			client.say(`#syo117`, `@${name}, Co-c`);
 		}
 	}
 
