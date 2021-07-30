@@ -26,7 +26,7 @@
 	let p3Click = false;
 	let p4Click = false;
 	let p5Click = false;
-	let p6Click = false;
+	//let p6Click = false;
 
 	client.on('message', (channel, tags, message, self) => {
 		// Ignore echoed messages.
@@ -52,10 +52,10 @@
 		{
 			client.say(channel, `@${tags.username}, Co-t`);
 		}
-		else if (p6Click === true)
-		{
-			client.say(channel, `@${tags.username}, Co-c`);
-		}
+		//else if (p6Click === true)
+		//{
+		//	client.say(channel, `@${tags.username}, Co-c`);
+		//}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
 
@@ -127,18 +127,18 @@
 		}
 	}
 
-	function sentMessageBotP6(){
-		var name = document.getElementById('input-text-twitch').value;
-	
-		if(name === "")
-		{
-			alert("Please type your full name");
-	
-		}
-		else{
-			client.say(`#syo117`, `@${name}, Co-c`);
-		}
-	}
+	//function sentMessageBotP6(){
+	//	var name = document.getElementById('input-text-twitch').value;
+	//
+	//	if(name === "")
+	//	{
+	//		alert("Please type your full name");
+	//
+	//	}
+	//	else{
+	//		client.say(`#syo117`, `@${name}, Co-c`);
+	//	}
+	//}
 
 //}
 
