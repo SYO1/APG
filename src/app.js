@@ -73,7 +73,8 @@
             alert("Please type your full name");
         }
         else{
-            client.say(`#syo117`, `@${name}, Help`);
+			client.say(`#syo117`, `@${name}, cool`);
+            //client.say(`#syo117`, `@${name}, Help`);
         }
         
     }
