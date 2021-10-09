@@ -34,7 +34,7 @@
 		
 		if(p1Click === true)
 		{
-			client.say(channel, `@${tags.username}, Help`);
+			client.say(channel, `@${tags.username}, cool`);
 		}
 		else if (p2Click === true)
 		{
