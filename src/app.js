@@ -39,11 +39,13 @@
 		}
 		else if (p2Click === true)
 		{
-			client.say(channel, `@${tags.username}, Confuse`);
+			//client.say(channel, `@${tags.username}, Confuse`);
+			client.say(channel, `@${tags.username}, good`);
 		}
 		else if (p3Click === true)
 		{
-			client.say(channel, `@${tags.username}, Tease`);
+			//client.say(channel, `@${tags.username}, Tease`);
+			client.say(channel, `@${tags.username}, ok`);
 		}
 		else if (p4Click === true)
 		{
@@ -87,7 +89,8 @@
 
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Confuse`);
+			//client.say(`#syo117`, `@${name}, Confuse`);
+			client.say(`#syo117`, `@${name}, good`);
 		}
 	}
 	function sentMessageBotP3(){
@@ -99,7 +102,8 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Tease`);
+			//client.say(`#syo117`, `@${name}, Tease`);
+			client.say(`#syo117`, `@${name}, ok`);
 		}
     }
 
