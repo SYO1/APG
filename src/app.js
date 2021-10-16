@@ -34,18 +34,18 @@
 		
 		if(p1Click === true)
 		{
-			client.say(channel, `@${tags.username}, cool`);
-			//client.say(channel, `@${tags.username}, Help`);
+			//client.say(channel, `@${tags.username}, cool`);
+			client.say(channel, `@${tags.username}, Help`);
 		}
 		else if (p2Click === true)
 		{
-			//client.say(channel, `@${tags.username}, Confuse`);
-			client.say(channel, `@${tags.username}, good`);
+			client.say(channel, `@${tags.username}, Confuse`);
+			//client.say(channel, `@${tags.username}, good`);
 		}
 		else if (p3Click === true)
 		{
-			//client.say(channel, `@${tags.username}, Tease`);
-			client.say(channel, `@${tags.username}, ok`);
+			client.say(channel, `@${tags.username}, Tease`);
+			//client.say(channel, `@${tags.username}, ok`);
 		}
 		else if (p4Click === true)
 		{
@@ -75,8 +75,8 @@
             alert("Please type your full name");
         }
         else{
-			client.say(`#syo117`, `@${name}, cool`);
-            //client.say(`#syo117`, `@${name}, Help`);
+			//client.say(`#syo117`, `@${name}, cool`);
+            client.say(`#syo117`, `@${name}, Help`);
         }
         
     }
@@ -89,8 +89,8 @@
 
 		}
 		else{
-			//client.say(`#syo117`, `@${name}, Confuse`);
-			client.say(`#syo117`, `@${name}, good`);
+			client.say(`#syo117`, `@${name}, Confuse`);
+			//client.say(`#syo117`, `@${name}, good`);
 		}
 	}
 	function sentMessageBotP3(){
@@ -102,8 +102,8 @@
 	
 		}
 		else{
-			//client.say(`#syo117`, `@${name}, Tease`);
-			client.say(`#syo117`, `@${name}, ok`);
+			client.say(`#syo117`, `@${name}, Tease`);
+			//client.say(`#syo117`, `@${name}, ok`);
 		}
     }
 
