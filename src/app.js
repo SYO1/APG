@@ -39,7 +39,24 @@
 		}
 		else if (p2Click === true)
 		{
-			client.say(channel, `@${tags.username}, Confuse`);
+			let rand = Math.floor(Math.random()*3);
+			switch(rand)
+			{
+				case 0:
+					client.say(channel, `@${tags.username}, Hello everyone!`);
+					break;
+				case 1:
+					client.say(channel, `@${tags.username}, Nice to meet you!`);
+					break;
+				case 2:
+					client.say(channel, `@${tags.username}, Let's play the game!`);
+					break;
+				default:
+					client.say(channel, `@${tags.username}, Hello.`);
+					break;
+			}
+
+			//client.say(channel, `@${tags.username}, Confuse`);
 			//client.say(channel, `@${tags.username}, good`);
 		}
 		else if (p3Click === true)
@@ -89,7 +106,24 @@
 
 		}
 		else{
-			client.say(`#syo117`, `@${name}, Confuse`);
+			let rand = Math.floor(Math.random()*3);
+			switch(rand)
+			{
+				case 0:
+					client.say(`#syo117`, `@${name}, Hello everyone!`);
+					break;
+				case 1:
+					client.say(`#syo117`, `@${name}, Nice to meet you!`);
+					break;
+				case 2:
+					client.say(`#syo117`, `@${name}, Let's play the game!`);
+					break;
+				default:
+					client.say(`#syo117`, `@${name}, Hello.`);
+					break;
+			}
+
+			//client.say(`#syo117`, `@${name}, Confuse`);
 			//client.say(`#syo117`, `@${name}, good`);
 		}
 	}
