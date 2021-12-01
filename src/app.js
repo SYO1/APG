@@ -29,6 +29,8 @@
 	let p6Click = false;
 	let p7Click = false;
 	let p8Click = false;
+	let p9Click = false;
+	let p10Click = false;
 
 	client.on('message', (channel, tags, message, self) => {
 		// Ignore echoed messages.
@@ -85,6 +87,14 @@
 		else if (p8Click === true)
 		{
 			client.say(channel, `@${tags.username}, ;P`);
+		}
+		else if (p9Click === true)
+		{
+			client.say(channel, `@${tags.username}, :|`);
+		}
+		else if (p10Click === true)
+		{
+			client.say(channel, `@${tags.username}, >(`);
 		}
 		//else if(message.toLowerCase() === '!hello') {
 			// "@alca, heya!"
@@ -213,6 +223,32 @@
 		}
 		else{
 			client.say(`#syo117`, `@${name}, ;P`);
+		}
+	}
+
+	function sentMessageBotP9(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, :|`);
+		}
+	}
+
+	function sentMessageBotP10(){
+		var name = document.getElementById('input-text-twitch').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, >(`);
 		}
 	}
 
