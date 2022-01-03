@@ -255,7 +255,16 @@
 	function gradeChange() {
 		var objS = document.getElementById("pid");
 		var grade = objS.options[objS.selectedIndex].value;
-		alert(grade);
+		//alert(grade);
+		if(grade === 1)
+		{
+			client.say(`#syo117`, `@${name}, Hello`);
+		}
+		else if(grade === 2)
+		{
+			client.say(`#syo117`, `@${name}, World`);
+		}
+
 	}
 
 //}
