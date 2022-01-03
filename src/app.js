@@ -253,6 +253,7 @@
 	}
 
 	function gradeChange() {
+		var name = document.getElementById('input-text-twitch').value;
 		var objS = document.getElementById("pid");
 		var grade = objS.options[objS.selectedIndex].value;
 		//alert(grade);
