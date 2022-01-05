@@ -259,11 +259,19 @@
 		//alert(grade);
 		if(grade === "1")
 		{
-			client.say(`#syo117`, `@${name}, Hello`);
+			client.say(`#syo117`, `@${name}, Hello everyone!`);
 		}
 		else if(grade === "2")
 		{
-			client.say(`#syo117`, `@${name}, World`);
+			client.say(`#syo117`, `@${name}, Hey, howdy, hi!`);
+		}
+		else if(grade === "3")
+		{
+			client.say(`#syo117`, `@${name}, Hiya!`);
+		}
+		else if(grade === "4")
+		{
+			client.say(`#syo117`, `@${name}, Yo, Greetings and salutations!`);
 		}
 
 	}
