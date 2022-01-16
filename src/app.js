@@ -290,7 +290,7 @@
 	
 		}
 		else{
-			client.say(`#syo117`, `@${name}, @${input}`);
+			client.say(`#syo117`, `@${name}, ${input}`);
 		}
 	}
 
