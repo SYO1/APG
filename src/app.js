@@ -280,6 +280,20 @@
 
 	}
 
+	function sentMessageBotInput(){
+		var name = document.getElementById('input-text-twitch').value;
+		var input = document.getElementById('text').value;
+	
+		if(name === "")
+		{
+			alert("Please type your full name");
+	
+		}
+		else{
+			client.say(`#syo117`, `@${name}, @${input}`);
+		}
+	}
+
 //}
 
 
