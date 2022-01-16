@@ -273,6 +273,10 @@
 		{
 			client.say(`#syo117`, `@${name}, Yo, Greetings and salutations!`);
 		}
+		else if(grade === "5")
+		{
+			client.say(`#syo117`, `@${name}, Ahoy, matey!`);
+		}
 
 	}
 
