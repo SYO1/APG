@@ -283,6 +283,8 @@
 	function sentMessageBotInput(){
 		var name = document.getElementById('input-text-twitch').value;
 		var input = document.getElementById('text').value;
+		var btn = document.querySelector("button");
+		var countTime = 30;
 	
 		if(name === "")
 		{
@@ -291,6 +293,22 @@
 		}
 		else{
 			client.say(`#syo117`, `@${name}, ${input}`);
+			btn.disabled = true;
+			var timeFlag = setInterval(function()
+			{
+				if(countTime > 0) 
+				{
+					btn.innerHTML = countTime + "s";
+					countTime--;
+				} 
+				else 
+				{
+					clearInterval(timeFlag);
+					btn.disabled = false;
+					btn.innerHTML = "Send";
+					countTime = 30;
+				}
+			},1000);
 		}
 	}
 
