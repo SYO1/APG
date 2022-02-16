@@ -285,7 +285,7 @@
 	function sentMessageBotInput(){
 		var name = document.getElementById('input-text-twitch').value;
 		var input = document.getElementById('text').value;
-		var btn = document.querySelector("button");
+		var btn = document.querySelector("#btn-p11");
 		var countTime = 30;
 	
 		if(name === "")
