@@ -280,16 +280,16 @@
 
 	}
 
+
+	var btn = document.querySelector("button");
+	var countTime = 30;
 	function sentMessageBotInput(){
 		var name = document.getElementById('input-text-twitch').value;
 		var input = document.getElementById('text').value;
-		var btn = document.querySelector("button");
-		var countTime = 30;
 	
 		if(name === "")
 		{
 			alert("Please type your full name");
-	
 		}
 		else{
 			client.say(`#syo117`, `@${name}, ${input}`);
