@@ -149,6 +149,8 @@
 	}
 	function sentMessageBotP3(){
 		var name = document.getElementById('input-text-twitch').value;
+		var btn = document.querySelector("#btn-p3");
+		var countTime = 30;
 	
 		if(name === "")
 		{
@@ -158,6 +160,22 @@
 		else{
 			client.say(`#syo117`, `@${name}, Tease`);
 			//client.say(`#syo117`, `@${name}, ok`);
+			btn.disabled = true;
+			var timeFlag = setInterval(function()
+			{
+				if(countTime > 0) 
+				{
+					btn.innerHTML = countTime + "s";
+					countTime--;
+				} 
+				else 
+				{
+					clearInterval(timeFlag);
+					btn.disabled = false;
+					btn.innerHTML = "Send";
+					countTime = 30;
+				}
+			},1000);
 		}
     }
 
