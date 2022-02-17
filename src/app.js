@@ -172,7 +172,7 @@
 				{
 					clearInterval(timeFlag);
 					btn.disabled = false;
-					btn.innerHTML = "Send";
+					btn.innerHTML = "Tease";
 					countTime = 30;
 				}
 			},1000);
