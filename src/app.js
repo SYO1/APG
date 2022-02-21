@@ -107,6 +107,9 @@
 
     function sentMessageBotP1(){
         var name = document.getElementById('input-text-twitch').value;
+		var btn = document.querySelector("#btn-p1");
+		var countTime = 10;
+
         if(name === "")
         {
             alert("Please type your full name");
@@ -114,11 +117,30 @@
         else{
 			//client.say(`#syo117`, `@${name}, cool`);
             client.say(`#syo117`, `@${name}, Help`);
+
+			btn.disabled = true;
+			var timeFlag = setInterval(function()
+			{
+				if(countTime > 0) 
+				{
+					btn.innerHTML = countTime + "s";
+					countTime--;
+				} 
+				else 
+				{
+					clearInterval(timeFlag);
+					btn.disabled = false;
+					btn.innerHTML = "Help";
+					countTime = 10;
+				}
+			},1000);
         }
         
     }
 	function sentMessageBotP2(){
 		var name = document.getElementById('input-text-twitch').value;
+		var btn = document.querySelector("#btn-p2");
+		var countTime = 10;
 
 		if(name === "")
         {
@@ -143,6 +165,23 @@
 					break;
 			}
 
+			btn.disabled = true;
+			var timeFlag = setInterval(function()
+			{
+				if(countTime > 0) 
+				{
+					btn.innerHTML = countTime + "s";
+					countTime--;
+				} 
+				else 
+				{
+					clearInterval(timeFlag);
+					btn.disabled = false;
+					btn.innerHTML = "Socialize";
+					countTime = 10;
+				}
+			},1000);
+
 			//client.say(`#syo117`, `@${name}, Confuse`);
 			//client.say(`#syo117`, `@${name}, good`);
 		}
@@ -150,7 +189,7 @@
 	function sentMessageBotP3(){
 		var name = document.getElementById('input-text-twitch').value;
 		var btn = document.querySelector("#btn-p3");
-		var countTime = 30;
+		var countTime = 10;
 	
 		if(name === "")
 		{
@@ -173,7 +212,7 @@
 					clearInterval(timeFlag);
 					btn.disabled = false;
 					btn.innerHTML = "Tease";
-					countTime = 30;
+					countTime = 10;
 				}
 			},1000);
 		}
@@ -181,6 +220,8 @@
 
 	function sentMessageBotP4(){
 		var name = document.getElementById('input-text-twitch').value;
+		var btn = document.querySelector("#btn-p4");
+		var countTime = 10;
 	
 		if(name === "")
 		{
@@ -189,11 +230,30 @@
 		}
 		else{
 			client.say(`#syo117`, `@${name}, Co-h`);
+
+			btn.disabled = true;
+			var timeFlag = setInterval(function()
+			{
+				if(countTime > 0) 
+				{
+					btn.innerHTML = countTime + "s";
+					countTime--;
+				} 
+				else 
+				{
+					clearInterval(timeFlag);
+					btn.disabled = false;
+					btn.innerHTML = "Cooperate with Help";
+					countTime = 10;
+				}
+			},1000);
 		}
 	}
 
 	function sentMessageBotP5(){
 		var name = document.getElementById('input-text-twitch').value;
+		var btn = document.querySelector("#btn-p5");
+		var countTime = 10;
 	
 		if(name === "")
 		{
@@ -202,6 +262,23 @@
 		}
 		else{
 			client.say(`#syo117`, `@${name}, Co-t`);
+
+			btn.disabled = true;
+			var timeFlag = setInterval(function()
+			{
+				if(countTime > 0) 
+				{
+					btn.innerHTML = countTime + "s";
+					countTime--;
+				} 
+				else 
+				{
+					clearInterval(timeFlag);
+					btn.disabled = false;
+					btn.innerHTML = "Cooperate with Tease";
+					countTime = 10;
+				}
+			},1000);
 		}
 	}
 
@@ -304,7 +381,7 @@
 		var name = document.getElementById('input-text-twitch').value;
 		var input = document.getElementById('text').value;
 		var btn = document.querySelector("#btn-p11");
-		var countTime = 30;
+		var countTime = 10;
 	
 		if(name === "")
 		{
@@ -325,7 +402,7 @@
 					clearInterval(timeFlag);
 					btn.disabled = false;
 					btn.innerHTML = "Send";
-					countTime = 30;
+					countTime = 10;
 				}
 			},1000);
 		}
